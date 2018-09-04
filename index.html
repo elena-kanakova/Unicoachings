@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unicoachings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="overlay"></div>
+    <!-- Шапка сайта -->
+    <header id="main-header">
+        <div class="container flex">
+            <div class="main-header_item">
+                <div class="main-header_logo">
+                    <a href="#">
+                        <img src="img/logo.jpg" alt="Лого">
+                    </a>
+                </div>
+            </div>
+            <div class="main-header_item main-header_text">
+                <p>Начните новую <br>
+                    счастливую жизнь <br>
+                    прямо сейчас!</p>
+            </div>
+            <div class="main-header_item">
+                <nav id="main-nav">
+                    <ul class="flex">
+                        <li><a href="#" class="js-nav-link">Главная</a></li>
+                        <li><a href="#section-2" class="js-nav-link">Для кого</a></li>
+                        <li><a href="#section-3_title" class="js-nav-link-2">Что Вы получите</a></li>
+                        <li><a href="#section-4" class="js-nav-link">Формат</a></li>
+                    </ul>
+                    <ul class="flex">
+                        <li><a href="#section-5" class="js-nav-link">О коуче</a></li>
+                        <li><a href="#section-contacts" class="js-nav-link">Контакты</a></li>
+                        <li><a href="">Impressum</a></li>
+                        <li><a href="">Datenschutz</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header_item main-header_contacts">
+                <div class="main-header_tel-wrap flex">
+                    <div class="main-header_tel-phones">
+                        <a href="tel:" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
+                        <a href="" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
+                    </div>
+                    <div class="main-header_tel-apps">
+                        <a href="" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
+                        <a href="" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
+                    </div>
+                </div>
+                <div class="main-header_address-call flex">
+                    <p class="main-header_address">Ricklinger Stadtweg 59, 30459 Hannover</p>
+                    <button type="button" class="modal-link" data-href="call_modal">обратный звонок</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Первый экран -->
+    <section id="section-1">
+        <div class="container">
+            <div id="section-1_items-wrap" class="flex">
+                <div class="section-1_title-photo flex">
+                    <div class="section-1_item section-1_title">
+                        <h1>Коуч-центр <br><span>«Unicoachings Schnar»</span></h1>
+                        <p><span>Создайте счастье </span><br><span>и успех вместе </span><br><span>с нами! </span><br></p>
+                        <button type="button" onclick="open_modal" data-href="happy_modal" class="link-modal_btn"><img
+                                src="img/happy-icon.png" alt="Иконка"><span>Хочу стать счастливым</span></button>
+                    </div>
+                    <div class="section-1_item section-1_photo">
+                        <div class="section-1_photo_photo">
+                            <img src="img/section-1_photo.png" alt="Фото">
+                        </div>
+                        <div class="section-1_photo_desc flex column center">
+                            <div class="section-1_photo_desc-wrap flex column center">
+                                <p class="name">Jürgen Schnar</p>
+                                <p class="desc">Профессиональный коуч</p>
+                            </div>
+                            <div class="section-1_photo_desc-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-1_promo">
+                    <div class="section-1_item section-1_promo_quest flex">
+                        <img src="img/section-1_promo_icon.png" alt="Иконка">
+                        <p>Не знаете, <br>нужно ли <br>это Вам?</p>
+                    </div>
+                    <div class="section-1_item section-1_promo_time">
+                        <div class="section-1_promo_time_time flex">
+                            <p class="time">20</p>
+                            <p class="vertical">минут</p>
+                        </div>
+                        <p class="section-1_promo_time_text"><span>бесплатной</span> <br><span>консультации</span></p>
+                    </div>
+                    <div class="section-1_item section-1_promo_desc">
+                        <p>*По итогам данной консультации <br>Вы примите решение, готовы ли Вы <br>принять участие в нашей программе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Второй экран -->
+    <div class="section-2-line"></div>
+    <section id="section-2">
+        <div id="section-2_wrap" class="container flex wrap">
+            <div class="section-2_item flex item-1">
+                <h2>Узнаете себя?</h2>
+            </div>
+            <div class="section-2_item flex item-2">
+                <img src="img/section-2_item-1_icon.png" alt="Иконка">
+                <p>Не верите в себя? С каждым <br>днём всё <span>сложнее справляться </span><br>с навалившимися проблемами?</p>
+            </div>
+            <div class="section-2_item flex item-3">
+                <img src="img/section-2_item-2_icon.png" alt="Иконка">
+                <p>Нелюбимая работа <span>не стимулирует </span><br>на новые начинания, а вызывает <br>лишь желание на неё не пойти?</p>
+            </div>
+            <div class="section-2_item flex item-4">
+                <img src="img/section-2_item-3_icon.png" alt="Иконка">
+                <p>Недопонимание в семье? <br><span>Кажется, что мир рушится </span><br>на части?</p>
+            </div>
+            <div class="section-2_item flex item-5">
+                <img src="img/section-2_item-4_icon.png" alt="Иконка">
+                <p>Хотите сменить работу, <br>но <span>боитесь</span>, что <br>не получится?</p>
+            </div>
+            <div class="section-2_item flex item-6">
+                <img src="img/section-2_item-5_icon.png" alt="Иконка">
+                <p>Чувство неудовлетворённости <br><span>ежедневно разрушает </span><br>Вас изнутри?</p>
+            </div>
+            <div class="section-2_item flex item-7">
+                <img src="img/section-2_item-6_icon.png" alt="Иконка">
+                <p>Хотите личностного <br>роста, но постоянно <br><span>что-то мешает?</span></p>
+            </div>
+        </div>
+    </section>
+    <!-- Третий экран -->
+    <section id="section-3">
+        <div class="container">
+            <div class="section-3_desc-title">
+                <div class="section-3_desc-title_wrap flex">
+                    <div class="section-3_img">
+                        <img src="img/section-3_photo.png" alt="Фото">
+                    </div>
+                    <div class="section-3_desc">
+                        <div class="section-3_title">
+                            <h2><span>А может быть по-другому!</span></h2>
+                        </div>
+                        <div class="section-3_text">
+                            <p>У нас Вы узнаете, как создать внутреннюю безопасность и уверенность в своей жизни во времена перемен. Вы найдёте ответ на вопрос: <span class="bold">«Как сосредоточить свои мысли, действия и чувства на любви, изобилии и доверии, чтобы достичь желаемого».</span> Мы рады сопровождать Вас на пути к новым результатам!</p>
+                        </div>
+                        <button type="button" onclick="open_modal" data-href="about_modal" class="link-modal_btn"><img
+                                src="img/call-icon.png" alt="Иконка"><span>Хочу узнать подробнее</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3_content">
+                <div class="section-3_title">
+                    <h2 id="section-3_title"><span>Что Вы получите</span></h2>
+                </div>
+                <div class="section-3_content-wrap flex wrap">
+                    <div class="section-3_item item-1 flex">
+                        <p>Откроете новые пути <br>развития Вашей личности</p>
+                    </div>
+                    <div class="section-3_item item-2 flex">
+                        <p>Научитесь любить <br>и уважать себя</p>
+                    </div>
+                    <div class="section-3_item item-3 flex">
+                        <p>Найдёте в себе силы <br>воплотить мечты в реальность</p>
+                    </div>
+                    <div class="section-3_item item-4 flex">
+                        <p>Осознаете своё место в мире, <br>начнёте заниматься «своим» делом</p>
+                    </div>
+                    <div class="section-3_item item-5 flex">
+                        <p>Получите сильнейший мотивационный <br>толчок двигаться дальше</p>
+                    </div>
+                    <div class="section-3_item item-6 flex">
+                        <p>Сможете понять, как стать <br>счастливым и независимым человеком</p>
+                    </div>
+                    <div class="section-3_item item-7 flex">
+                        <p>Сможете измениться и <br>изменить свою жизнь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Четвертый экран -->
+    <section id="section-4">
+        <div class="container">
+            <div class="section-4_desc">
+                <h2><span>Формат проведения</span></h2>
+            </div>
+            <div class="section-4_wrap flex">
+                <div class="section-4_left">
+                    <div class="section-4_left_piramida flex column">
+                        <div class="item-1">
+                            <p>Программа <br>поможет Вам <br>понять и изменить <br>то, что мешает вашему <br>счастью, успеху и
+                                <br>благополучию. Улучшить <br>отношения в семье и на работе</p>
+                        </div>
+                        <div class="item-2">
+                            <p>Все решения принимаете Вы сами. <br>Мы лишь направляем Вас на путь, <br>который поможет Вам преодолеть
+                                <br>существующие трудности и стать счастливым</p>
+                        </div>
+                        <div class="item-3">
+                            <p>Программа коучинга ориентирована на решение <br>основной задачи – найти и убрать ограничения,
+                                <br>которые мешают Вам быть по-настоящему <br>счастливым человеком</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-4_right">
+                    <div class="form-wrap">
+                        <div class="form-title">
+                            <h2>Получите</h2>
+                            <div class="section-4_item section-1_promo_time flex">
+                                <div class="section-4_promo_time_time flex">
+                                    <p class="time">20</p>
+                                    <p class="vertical">минут</p>
+                                </div>
+                                <p class="section-4_promo_time_text"><span>бесплатной</span> <br><span>консультации</span></p>
+                            </div>
+                        </div>
+                        <form id="form_section-4" action="form_section_4()" method="post" class="section-4-form form ajax_form">
+                            <div class="form_name">
+                                <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
+                                <p><input type="text" name="name" id="section-4-form_name" placeholder="Андрей"></p>
+                                <span class="error_name"></span>
+                            </div>
+                            <div class="form_phone">
+                                <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                                <p><input type="tel" name="phone" id="section-4-form_phone" class="phone" placeholder="0152 222"></p>
+                                <span class="error_name"></span>
+                            </div>
+                            <div class="form_email">
+                                <label for="section-4-form_phone" class="flex"><img src="img/form-email-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                                <p><input type="email" name="email" id="section-4-form_email" class="email" placeholder="andrei@email.com"></p>
+                                <span class="error_name"></span>
+                            </div>
+                            <button type="submit" class="btn-submit"><img src="img/call-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
+                            <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Пятый экран -->
+    <section id="section-5">
+        <img class="section-5_bg" src="img/section-5_bg.png" alt="Фон">
+        <div class="container flex">
+            <div class="section-5_left flex">
+                <div class="section-1_photo_photo">
+                    <img src="img/section-1_photo.png" alt="Фото">
+                </div>
+                <div class="section-1_photo_desc flex column center">
+                    <div class="section-1_photo_desc-wrap flex column center">
+                        <p class="name">Jürgen Schnar</p>
+                        <p class="desc">Профессиональный коуч</p>
+                    </div>
+                    <div class="section-1_photo_desc-line"></div>
+                </div>
+            </div>
+            <div class="section-5_right">
+                <div class="section-5_title flex">
+                    <h2><span>О коуче</span></h2>
+                    <div class="section-5_title_text_time flex">
+                        <img src="img/section-5_right_title_icon.png" alt="Иконка">
+                        <p class="time">15</p>
+                        <p class="min">лет <br>опыта</p>
+                    </div>
+                </div>
+                <div class="section-5_desc">
+                    <p>«На своих коучингах, семинарах, тренингах я делюсь опытом и <span class="bold">сопровождаю своих клиентов</span> не только как профессиональный коуч, экономист, журналист, переводчик, но и как человек, имеющий более 25-ти летний опыт в области психологических консультаций  в трудных жизненных ситуациях</p>
+                    <p>Сколько Вы готовы заплатить за то, чтобы наполнить свою жизнь радостью, светом, теплом. За то, чтобы Ваши близкие стремились найти любую возможность, чтобы побыть с Вами лишнюю минутку. За то, чтобы утро начиналось с ожидания чуда, а день заканчивался ощущением умиротворения.
+                        <br><span class="bold">Согласны, получить это всё – Бесценно!</span>»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Контакты -->
+    <section id="section-contacts">
+        <div class="container flex">
+            <div class="contacts-item">
+                <div class="contacts-title">
+                    <h2></h2>
+                    <div class="contacts-contacts">
+                        <div class="address_title flex">
+                            <p>Адрес:</p>
+                            <img src="img/logo.jpg" alt="Лого">
+                        </div>
+                        <div class="main-header_tel-wrap">
+                            <div class="contacts-email">
+                                <a class="contacts-email_email" href="mailto:seminar@unicoachings.com">seminar@unicoachings.com</a>
+                            </div>
+                            <div class="main-header_address-call">
+                                <p class="main-header_address">Ricklinger Stadtweg 59, <br>30459 Hannover</p>
+                            </div>
+                            <div class="main-header_tel-phones">
+                                <a href="tel:" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
+                                <a href="" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
+                            </div>
+                            <div class="main-header_tel-apps">
+                                <a href="" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
+                                <a href="" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
+                            </div>
+                        </div>
+                        <div class="main-header_address-call">
+                            <a href="#call-modal" class="modal-link">обратный звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts-item">
+                <img src="img/google-map.jpg" alt="Карта">
+            </div>
+            <div class="contacts-item">
+                <div id="slider_opinions" class="slider_opinions owl-carousel">
+                    <div class="opinions_item">
+                        <div class="opinions_title flex">
+                            <div class="opinions_img">
+                                <img src="img/opinions_icon.png" alt="Иконка">
+                            </div>
+                            <div class="opinions_name-age">
+                                <div class="name">
+                                    <p>Андрей Андреев</p>
+                                </div>
+                                <div class="age">
+                                    <p>35 лет / администратор</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opinion_text">
+                            <div class="opinion_text-title">
+                                <p>«Небольшой отзыв»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opinions_item">
+                        <div class="opinions_title flex">
+                            <div class="opinions_img">
+                                <img src="img/opinions_icon.png" alt="Иконка">
+                            </div>
+                            <div class="opinions_name-age">
+                                <div class="name">
+                                    <p>Иван Иванов</p>
+                                </div>
+                                <div class="age">
+                                    <p>35 лет / администратор</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opinion_text">
+                            <div class="opinion_text-title">
+                                <p>«Небольшой отзыв»</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opinions_item">
+                        <div class="opinions_title flex">
+                            <div class="opinions_img">
+                                <img src="img/opinions_icon.png" alt="Иконка">
+                            </div>
+                            <div class="opinions_name-age">
+                                <div class="name">
+                                    <p>Сергей Сергеев</p>
+                                </div>
+                                <div class="age">
+                                    <p>35 лет / администратор</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opinion_text">
+                            <div class="opinion_text-title">
+                                <p>«Небольшой отзыв»</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container flex">
+            <p class="rights">Copyright© Unicoachings Schnar</p>
+            <p class="develop">разработано <a target="_blank" href="https://perfect-pixels.de/">PerfectPixels</a></p>
+        </div>
+    </footer>
+</div>
+<div id="about_modal" class="modal">
+    <div class="modal_wrap">
+        <span class="close"><img src="img/close-btn.png" alt="Закрыть"></span>
+        <div class="form-wrap flex column">
+            <div class="form-title">
+                <h2>Получите</h2>
+                <div class="section-4_item section-1_promo_time flex">
+                    <div class="section-4_promo_time_time flex">
+                        <p class="time">20</p>
+                        <p class="vertical">минут</p>
+                    </div>
+                    <p class="section-4_promo_time_text"><span>бесплатной</span> <br><span>консультации</span></p>
+                </div>
+            </div>
+            <form id="form_about" action="form_about()" method="post" class="section-4-form form ajax_form">
+                <div class="form_name">
+                    <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
+                    <p><input type="text" name="name" id="modal-about_form-name" placeholder="Андрей"></p>
+                    <span class="error_name"></span>
+                </div>
+                <div class="form_phone">
+                    <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                    <p><input type="tel" name="phone" id="modal-about_form-phone" class="phone" placeholder="0152 222"></p>
+                    <span class="error_name"></span>
+                </div>
+                <div class="form_email">
+                    <label for="section-4-form_phone" class="flex"><img src="img/form-email-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                    <p><input type="email" name="email" id="modal-about_form-email" class="email" placeholder="andrei@email.com"></p>
+                    <span class="error_name"></span>
+                </div>
+                <button type="submit" class="btn-submit"><img
+                        src="img/happy-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
+                <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="happy_modal" class="modal">
+    <div class="modal_wrap">
+        <span class="close"><img src="img/close-btn.png" alt="Закрыть"></span>
+        <div class="form-wrap flex column">
+            <div class="form-title">
+                <h2>Создайте счастье и успех вместе с нами</h2>
+                <p>Оставьте свои контактные данные и мы <br>свяжемся с Вами в ближайшее время</p>
+            </div>
+            <form id="form_happy" action="form_happy()" method="post" class="section-4-form form ajax_form">
+                <div class="form_name">
+                    <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
+                    <p><input type="text" name="name" id="modal-happy_form-name" placeholder="Андрей"></p>
+                    <span class="error_name"></span>
+                </div>
+                <div class="form_phone">
+                    <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                    <p><input type="tel" name="phone" id="modal-happy_form-phone" class="phone" placeholder="0152 222"></p>
+                    <span class="error_name"></span>
+                </div>
+                <div class="form_email">
+                    <label for="section-4-form_phone" class="flex"><img src="img/form-email-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                    <p><input type="email" name="email" id="modal-happy_form-email" class="email" placeholder="andrei@email.com"></p>
+                    <span class="error_name"></span>
+                </div>
+                <button type="submit" class="btn-submit"><img
+                        src="img/call-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
+                <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="call_modal" class="modal">
+    <div class="modal_wrap">
+        <span class="close"><img src="img/close-btn.png" alt="Закрыть"></span>
+        <div class="form-wrap flex column">
+            <div class="form-title">
+                <h2>Закажите <br>обратный звонок</h2>
+                <p>Оставьте свои контактные данные и мы <br>свяжемся с Вами в ближайшее время</p>
+            </div>
+            <form action="" method="post" class="section-4-form form ajax_form">
+                <div class="form_name">
+                    <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
+                    <p><input type="text" name="name" id="modal-call_form-name" placeholder="Андрей"></p>
+                    <span class="error_name"></span>
+                </div>
+                <div class="form_phone">
+                    <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
+                    <p><input type="tel" name="phone" id="modal-call_form-phone" class="phone" placeholder="0152 222"></p>
+                    <span class="error_name"></span>
+                </div>
+                <button type="submit" class="btn-submit"><img
+                        src="img/call-icon.png" alt="Иконка"><span>Заказать обратный звонок</span></button>
+                <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="thx_modal" class="modal">
+    <div class="modal_wrap">
+        <span class="close"><img src="img/close-btn.png" alt="Закрыть"></span>
+        <div class="modal_wrap_content flex column">
+            <div class="form-title">
+                <p>Спасибо! Ваша <br>заявка принята</p>
+                <img src="img/logo.jpg" alt="Лого">
+            </div>
+            <div class="form-line"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
