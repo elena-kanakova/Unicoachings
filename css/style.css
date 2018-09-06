@@ -92,7 +92,6 @@ html.fixed {
 #wrapper {
     z-index: 0;
     width: 100%;
-    min-width: 1280px;
     overflow: hidden;
 }
 #preloader {
@@ -190,7 +189,7 @@ html.fixed {
 }
 /* Основной контент */
 .container {
-    max-width: 1280px;
+    width: 1280px;
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
@@ -323,7 +322,7 @@ html.fixed {
 /* Экран 1 */
 #section-1 {
     position: relative;
-    margin: 119px -1000px;
+    margin: 119px -1000px 0;
     background: url("../img/section-1_bg.jpg") top center no-repeat;
     border-radius:0 0 50% 50%;
     overflow: hidden;
@@ -575,7 +574,7 @@ html.fixed {
     font-weight: 600;
     align-items: center;
 }
-.section-2_item.item-1 img, .section-2_item.item-2 img, .section-2_item.item-3 img, .section-2_item.item-4 img, img.section-2_item.item-5 img, .section-2_item.item-6 img, .section-2_item.item-7 img {
+.section-2_item.item-1 img, .section-2_item.item-2 img, .section-2_item.item-3 img, .section-2_item.item-4 img, .section-2_item.item-5 img, .section-2_item.item-6 img, .section-2_item.item-7 img {
     display: block;
     margin-right: 30px;
 }
@@ -637,7 +636,7 @@ html.fixed {
 .section-3_title {
     margin-top: 30px;
 }
-.section-3_title h2 span, .section-4_desc h2 span, .section-5_title h2 span {
+.section-3_title h2 span, .section-4_desc h2 span, .section-5_title h2 span, .contacts-title h2 span {
     position: relative;
     margin-left: 54px;
     padding-left: 46px;
@@ -645,7 +644,7 @@ html.fixed {
     color: black;
     font-weight: 600;
 }
-.section-3_title h2 span::before, .section-4_desc h2 span::before, .section-5_title h2 span::before {
+.section-3_title h2 span::before, .section-4_desc h2 span::before, .section-5_title h2 span::before, .contacts-title h2 span::before {
     position: absolute;
     content: '';
     top: 50%;
@@ -966,10 +965,17 @@ html.fixed {
 }
 /* Контакты */
 #section-contacts .container {
+    padding-top: 50px;
     justify-content: space-between;
 }
 #section-contacts .main-header_tel-apps, #section-contacts .main-header_address-call, #section-contacts .main-header_tel-phones, #section-contacts .main-header_address, .address_title, .contacts-email  {
     margin-bottom: 20px;
+}
+.contacts-title h2 {
+    margin-bottom: 20px;
+}
+.contacts-contacts {
+    margin-left: 100px;
 }
 .address_title {
     align-items: center;

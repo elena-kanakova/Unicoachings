@@ -8,7 +8,7 @@ $(document).ready(function() {
         var id2 = $(this).offset().top,
             height = window.innerHeight / 2;
 
-        $('html').addClass('fixed');
+        $('html,#main-header').addClass('fixed');
         $('#overlay').fadeIn(200);
         $(id).fadeIn(200);
         $(id).css('top', window.scrollY + height + 'px');
@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('.close').click(function (e) {
         e.preventDefault();
         $('#overlay, .modal').fadeOut(200);
-        $('html').removeClass('fixed');
+        $('html,#main-header').removeClass('fixed');
     });
 
     $('body').on('click', '#overlay', function(event) {
@@ -78,6 +78,34 @@ function form_section_4() {
             else{
 
                 $('#form-error, #overlay').fadeIn(200);
+                setTimeout(function(){$('#form-error, #overlay').fadeOut('200')}, 2000);
+
+            }
+        },
+        error:  function(xhr, str){
+            $('#form-error-2, #overlay').fadeIn(200);
+            setTimeout(function(){$('#overlay, #form-error-2').fadeOut('200')}, 2000);
+        }
+    });
+};
+function form_call() {
+    var msg   = $('#form_call').serialize();
+    $.ajax({
+        type: 'POST',
+        url: 'action_call.php',
+        data: msg,
+        success: function(data) {
+
+            if (data.result==1){
+                $('#thx_modal, #overlay').fadeIn(200);
+                $('#form_call')[0].reset();
+                setTimeout(function(){$('#overlay, #thx_modal, #call_modal').fadeOut('200')}, 2000);
+            }
+
+            else{
+
+                $('#form-error, #overlay').fadeIn(200);
+                alert('ошибка');
                 setTimeout(function(){$('#form-error, #overlay').fadeOut('200')}, 2000);
 
             }
