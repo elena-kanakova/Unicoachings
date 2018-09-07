@@ -1,11 +1,12 @@
 <?php
 $error = '';
 if ($_POST) { // если передан массив POST
-    $name_call = htmlspecialchars($_POST["name_call"]); // пишем данные в переменные и экранируем спецсимволы
-    $phone_call = htmlspecialchars($_POST["phone_call"]);
+    $name_about = htmlspecialchars($_POST["name_about"]); // пишем данные в переменные и экранируем спецсимволы
+    $phone_about = htmlspecialchars($_POST["phone_about"]);
+    $email_about = htmlspecialchars($_POST["email_about"]);
 }
 
-if ($name_call=='' or $phone_call=='') {    /* Проверка на пустые поля*/
+if ($name_about=='' or $phone_about=='' or $email_about=='') {    /* Проверка на пустые поля*/
     $error='Заполните необходимые поля';
 }
 else {
@@ -14,8 +15,9 @@ else {
 
     $sub="Заявка с сайта";
     $mes = "
-		<p>Имя: </p> $name_call <hr>
-		Телефон:  $phone_call";
+		<p>Имя: </p> $name_about <hr>
+		Телефон:  $phone_about <hr>
+		email:  $email_about";
 
     $sub.=' mydomain';
 

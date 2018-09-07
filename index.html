@@ -14,21 +14,22 @@
 <div id="wrapper">
     <div id="overlay"></div>
     <!-- Шапка сайта -->
-    <header id="main-header">
-        <div class="container flex">
-            <div class="main-header_item">
+    <header id="main-header" class="wow fadeInDown">
+        <div class="container flex wrap">
+            <div class="main-header_item header-logo">
                 <div class="main-header_logo">
                     <a href="#">
-                        <img src="img/logo.jpg" alt="Лого">
+                        <img src="img/logo.png" alt="Лого">
                     </a>
+                </div>
+                <div class="btn-menu">
+                    <span></span><span></span><span></span>
                 </div>
             </div>
             <div class="main-header_item main-header_text">
-                <p>Начните новую <br>
-                    счастливую жизнь <br>
-                    прямо сейчас!</p>
+                <p>Начните новую <br>счастливую жизнь <br>прямо сейчас!</p>
             </div>
-            <div class="main-header_item">
+            <div class="main-header_item main-menu">
                 <nav id="main-nav">
                     <ul class="flex">
                         <li><a href="#" class="js-nav-link">Главная</a></li>
@@ -39,20 +40,20 @@
                     <ul class="flex">
                         <li><a href="#section-5" class="js-nav-link">О коуче</a></li>
                         <li><a href="#section-contacts" class="js-nav-link">Контакты</a></li>
-                        <li><a href="">Impressum</a></li>
-                        <li><a href="">Datenschutz</a></li>
+                        <li><button type="button" class="modal-link" data-href="Impressum">Impressum</button></li>
+                        <li><button type="button" class="modal-link" data-href="Datenschutz">Datenschutz</button></li>
                     </ul>
                 </nav>
             </div>
             <div class="main-header_item main-header_contacts">
                 <div class="main-header_tel-wrap flex">
                     <div class="main-header_tel-phones">
-                        <a href="tel:" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
-                        <a href="" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
+                        <a href="tel:+7051141066858" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
+                        <a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
                     </div>
                     <div class="main-header_tel-apps">
-                        <a href="" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
-                        <a href="" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
+                        <a href="tel:+7017612224490" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
+                        <a href="whatsapp://+7017612224490" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
                     </div>
                 </div>
                 <div class="main-header_address-call flex">
@@ -67,13 +68,13 @@
         <div class="container">
             <div id="section-1_items-wrap" class="flex">
                 <div class="section-1_title-photo flex">
-                    <div class="section-1_item section-1_title">
+                    <div class="section-1_item section-1_title wow fadeInLeft">
                         <h1>Коуч-центр <br><span>«Unicoachings Schnar»</span></h1>
                         <p><span>Создайте счастье </span><br><span>и успех вместе </span><br><span>с нами! </span><br></p>
                         <button type="button" onclick="open_modal" data-href="happy_modal" class="link-modal_btn"><img
                                 src="img/happy-icon.png" alt="Иконка"><span>Хочу стать счастливым</span></button>
                     </div>
-                    <div class="section-1_item section-1_photo">
+                    <div class="section-1_item section-1_photo wow fadeIn" data-delay=".4s">
                         <div class="section-1_photo_photo">
                             <img src="img/section-1_photo.png" alt="Фото">
                         </div>
@@ -86,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="section-1_promo">
+                <div class="section-1_promo wow fadeInRight">
                     <div class="section-1_item section-1_promo_quest flex">
                         <img src="img/section-1_promo_icon.png" alt="Иконка">
                         <p>Не знаете, <br>нужно ли <br>это Вам?</p>
@@ -109,30 +110,30 @@
     <div class="section-2-line"></div>
     <section id="section-2">
         <div id="section-2_wrap" class="container flex wrap">
-            <div class="section-2_item flex item-1">
+            <div class="section-2_item flex item-1 wow fadeInLeft">
                 <h2>Узнаете себя?</h2>
             </div>
-            <div class="section-2_item flex item-2">
+            <div class="section-2_item flex item-2 wow fadeInRight">
                 <img src="img/section-2_item-1_icon.png" alt="Иконка">
                 <p>Не верите в себя? С каждым <br>днём всё <span>сложнее справляться </span><br>с навалившимися проблемами?</p>
             </div>
-            <div class="section-2_item flex item-3">
+            <div class="section-2_item flex item-3 wow fadeInLeft">
                 <img src="img/section-2_item-2_icon.png" alt="Иконка">
                 <p>Нелюбимая работа <span>не стимулирует </span><br>на новые начинания, а вызывает <br>лишь желание на неё не пойти?</p>
             </div>
-            <div class="section-2_item flex item-4">
+            <div class="section-2_item flex item-4 wow fadeInRight">
                 <img src="img/section-2_item-3_icon.png" alt="Иконка">
                 <p>Недопонимание в семье? <br><span>Кажется, что мир рушится </span><br>на части?</p>
             </div>
-            <div class="section-2_item flex item-5">
+            <div class="section-2_item flex item-5 wow fadeInLeft">
                 <img src="img/section-2_item-4_icon.png" alt="Иконка">
                 <p>Хотите сменить работу, <br>но <span>боитесь</span>, что <br>не получится?</p>
             </div>
-            <div class="section-2_item flex item-6">
+            <div class="section-2_item flex item-6 wow fadeInLeft">
                 <img src="img/section-2_item-5_icon.png" alt="Иконка">
                 <p>Чувство неудовлетворённости <br><span>ежедневно разрушает </span><br>Вас изнутри?</p>
             </div>
-            <div class="section-2_item flex item-7">
+            <div class="section-2_item flex item-7 wow fadeInLeft">
                 <img src="img/section-2_item-6_icon.png" alt="Иконка">
                 <p>Хотите личностного <br>роста, но постоянно <br><span>что-то мешает?</span></p>
             </div>
@@ -141,14 +142,14 @@
     <!-- Третий экран -->
     <section id="section-3">
         <div class="container">
-            <div class="section-3_desc-title">
+            <div class="section-3_desc-title wow zoomIn" data-delay=".2s">
                 <div class="section-3_desc-title_wrap flex">
                     <div class="section-3_img">
                         <img src="img/section-3_photo.png" alt="Фото">
                     </div>
                     <div class="section-3_desc">
                         <div class="section-3_title">
-                            <h2><span>А может быть по-другому!</span></h2>
+                            <h2><span>А может быть <br>по-другому!</span></h2>
                         </div>
                         <div class="section-3_text">
                             <p>У нас Вы узнаете, как создать внутреннюю безопасность и уверенность в своей жизни во времена перемен. Вы найдёте ответ на вопрос: <span class="bold">«Как сосредоточить свои мысли, действия и чувства на любви, изобилии и доверии, чтобы достичь желаемого».</span> Мы рады сопровождать Вас на пути к новым результатам!</p>
@@ -159,29 +160,29 @@
                 </div>
             </div>
             <div class="section-3_content">
-                <div class="section-3_title">
+                <div class="section-3_title wow pulse" data-delay=".4s">
                     <h2 id="section-3_title"><span>Что Вы получите</span></h2>
                 </div>
                 <div class="section-3_content-wrap flex wrap">
-                    <div class="section-3_item item-1 flex">
+                    <div class="section-3_item item-1 flex wow fadeInLeft">
                         <p>Откроете новые пути <br>развития Вашей личности</p>
                     </div>
-                    <div class="section-3_item item-2 flex">
+                    <div class="section-3_item item-2 flex wow pulse" data-delay=".4s">
                         <p>Научитесь любить <br>и уважать себя</p>
                     </div>
-                    <div class="section-3_item item-3 flex">
+                    <div class="section-3_item item-3 flex wow fadeInRight">
                         <p>Найдёте в себе силы <br>воплотить мечты в реальность</p>
                     </div>
-                    <div class="section-3_item item-4 flex">
+                    <div class="section-3_item item-4 flex wow fadeInLeft">
                         <p>Осознаете своё место в мире, <br>начнёте заниматься «своим» делом</p>
                     </div>
-                    <div class="section-3_item item-5 flex">
+                    <div class="section-3_item item-5 flex wow fadeInRight">
                         <p>Получите сильнейший мотивационный <br>толчок двигаться дальше</p>
                     </div>
-                    <div class="section-3_item item-6 flex">
+                    <div class="section-3_item item-6 flex wow fadeInLeft">
                         <p>Сможете понять, как стать <br>счастливым и независимым человеком</p>
                     </div>
-                    <div class="section-3_item item-7 flex">
+                    <div class="section-3_item item-7 flex wow fadeInRight">
                         <p>Сможете измениться и <br>изменить свою жизнь</p>
                     </div>
                 </div>
@@ -192,26 +193,26 @@
     <section id="section-4">
         <div class="container">
             <div class="section-4_desc">
-                <h2><span>Формат проведения</span></h2>
+                <h2 class="wow fadeInLeft" data-delay=".4s"><span>Формат проведения</span></h2>
             </div>
             <div class="section-4_wrap flex">
                 <div class="section-4_left">
                     <div class="section-4_left_piramida flex column">
-                        <div class="item-1">
+                        <div class="item-1 wow fadeIn" data-delay=".4s">
                             <p>Программа <br>поможет Вам <br>понять и изменить <br>то, что мешает вашему <br>счастью, успеху и
                                 <br>благополучию. Улучшить <br>отношения в семье и на работе</p>
                         </div>
-                        <div class="item-2">
+                        <div class="item-2 wow fadeIn" data-delay=".6s">
                             <p>Все решения принимаете Вы сами. <br>Мы лишь направляем Вас на путь, <br>который поможет Вам преодолеть
                                 <br>существующие трудности и стать счастливым</p>
                         </div>
-                        <div class="item-3">
+                        <div class="item-3 wow fadeIn" data-delay=".6s">
                             <p>Программа коучинга ориентирована на решение <br>основной задачи – найти и убрать ограничения,
                                 <br>которые мешают Вам быть по-настоящему <br>счастливым человеком</p>
                         </div>
                     </div>
                 </div>
-                <div class="section-4_right">
+                <div class="section-4_right wow fadeInRight" data-delay=".4s">
                     <div class="form-wrap">
                         <div class="form-title">
                             <h2>Получите</h2>
@@ -223,20 +224,20 @@
                                 <p class="section-4_promo_time_text"><span>бесплатной</span> <br><span>консультации</span></p>
                             </div>
                         </div>
-                        <form id="form_section-4" action="javascript:void(null);" onsubmit="form_section_4()" method="post" class="section-4-form form ajax_form">
+                        <form id="form_section-4" action="javascript:void(null);" onsubmit="form_section_4()" method="POST" class="section-4-form form ajax_form">
                             <div class="form_name">
                                 <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
-                                <p><input type="text" name="name" id="section-4-form_name" placeholder="Андрей"></p>
+                                <p><input type="text" name="name_s4" id="section-4-form_name" placeholder="Андрей"></p>
                                 <span class="error_name"></span>
                             </div>
                             <div class="form_phone">
                                 <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
-                                <p><input type="tel" name="phone" id="section-4-form_phone" class="phone" placeholder="0152 222"></p>
+                                <p><input type="tel" name="phone_s4" id="section-4-form_phone" class="phone" placeholder="0152 222"></p>
                                 <span class="error_name"></span>
                             </div>
                             <div class="form_email">
                                 <label for="section-4-form_phone" class="flex"><img src="img/form-email-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
-                                <p><input type="email" name="email" id="section-4-form_email" class="email" placeholder="andrei@email.com"></p>
+                                <p><input type="email" name="email_s4" id="section-4-form_email" class="email" placeholder="andrei@email.com"></p>
                                 <span class="error_name"></span>
                             </div>
                             <button type="submit" class="btn-submit"><img src="img/call-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
@@ -251,7 +252,7 @@
     <section id="section-5">
         <img class="section-5_bg" src="img/section-5_bg.png" alt="Фон">
         <div class="container flex">
-            <div class="section-5_left flex">
+            <div class="section-5_left flex wow fadeInLeft">
                 <div class="section-1_photo_photo">
                     <img src="img/section-1_photo.png" alt="Фото">
                 </div>
@@ -265,14 +266,14 @@
             </div>
             <div class="section-5_right">
                 <div class="section-5_title flex">
-                    <h2><span>О коуче</span></h2>
-                    <div class="section-5_title_text_time flex">
+                    <h2 class="wow pulse"><span>О коуче</span></h2>
+                    <div class="section-5_title_text_time flex wow fadeInRight" data-delay=".2s">
                         <img src="img/section-5_right_title_icon.png" alt="Иконка">
                         <p class="time">15</p>
                         <p class="min">лет <br>опыта</p>
                     </div>
                 </div>
-                <div class="section-5_desc">
+                <div class="section-5_desc wow fadeIn" data-delay=".4s">
                     <p>«На своих коучингах, семинарах, тренингах я делюсь опытом и <span class="bold">сопровождаю своих клиентов</span> не только как профессиональный коуч, экономист, журналист, переводчик, но и как человек, имеющий более 25-ти летний опыт в области психологических консультаций  в трудных жизненных ситуациях</p>
                     <p>Сколько Вы готовы заплатить за то, чтобы наполнить свою жизнь радостью, светом, теплом. За то, чтобы Ваши близкие стремились найти любую возможность, чтобы побыть с Вами лишнюю минутку. За то, чтобы утро начиналось с ожидания чуда, а день заканчивался ощущением умиротворения.
                         <br><span class="bold">Согласны, получить это всё – Бесценно!</span>»</p>
@@ -282,14 +283,14 @@
     </section>
     <!-- Контакты -->
     <section id="section-contacts">
-        <div class="container flex">
-            <div class="contacts-item">
+        <div class="container flex wrap">
+            <div class="contacts-item contacts wow fadeInLeft">
                 <div class="contacts-title">
                     <h2><span>Наши контакты</span></h2>
                     <div class="contacts-contacts">
                         <div class="address_title flex">
                             <p>Адрес:</p>
-                            <img src="img/logo.jpg" alt="Лого">
+                            <img src="img/logo.png" alt="Лого">
                         </div>
                         <div class="main-header_tel-wrap">
                             <div class="contacts-email">
@@ -299,24 +300,24 @@
                                 <p class="main-header_address">Ricklinger Stadtweg 59, <br>30459 Hannover</p>
                             </div>
                             <div class="main-header_tel-phones">
-                                <a href="tel:" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
-                                <a href="" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
+                                <a href="tel:+7051141066858" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
+                                <a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
                             </div>
                             <div class="main-header_tel-apps">
-                                <a href="" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
-                                <a href="" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
+                                <a href="tel:+7017612224490" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
+                                <a href="whatsapp://+7017612224490" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
                             </div>
                         </div>
                         <div class="main-header_address-call">
-                            <a href="#call-modal" class="modal-link">обратный звонок</a>
+                            <button type="button" class="modal-link" data-href="call_modal">обратный звонок</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contacts-item">
-                <img src="img/google-map.jpg" alt="Карта">
+            <div class="contacts-item map wow fadeIn" data-delay=".4s">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2437.2081491363056!2d9.72095131550234!3d52.3485099797821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b074d904c8e393%3A0xb4c6096ba65fdb8!2sRicklinger+Stadtweg+59%2C+30459+Hannover%2C+Germany!5e0!3m2!1sen!2sru!4v1536284596506" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <div class="contacts-item">
+            <div class="contacts-item opinions wow fadeInRight">
                 <div id="slider_opinions" class="slider_opinions owl-carousel">
                     <div class="opinions_item">
                         <div class="opinions_title flex">
@@ -382,7 +383,7 @@
             </div>
         </div>
     </section>
-    <footer id="footer">
+    <footer id="footer" class="fadeInDown">
         <div class="container flex">
             <p class="rights">Copyright© Unicoachings Schnar</p>
             <p class="develop">разработано <a target="_blank" href="https://perfect-pixels.de/">PerfectPixels</a></p>
@@ -403,20 +404,20 @@
                     <p class="section-4_promo_time_text"><span>бесплатной</span> <br><span>консультации</span></p>
                 </div>
             </div>
-            <form id="form_about" action="javascript:void(null);" onsubmit="form_about()" method="post" class="section-4-form form ajax_form">
+            <form id="form_about" action="javascript:void(null);" onsubmit="form_about()" method="POST" class="section-4-form form ajax_form">
                 <div class="form_name">
                     <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
-                    <p><input type="text" name="name" id="modal-about_form-name" placeholder="Андрей"></p>
+                    <p><input type="text" name="name_about" id="modal-about_form-name" placeholder="Андрей"></p>
                     <span class="error_name"></span>
                 </div>
                 <div class="form_phone">
                     <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
-                    <p><input type="tel" name="phone" id="modal-about_form-phone" class="phone" placeholder="0152 222"></p>
+                    <p><input type="tel" name="phone_about" id="modal-about_form-phone" class="phone" placeholder="0152 222"></p>
                     <span class="error_name"></span>
                 </div>
                 <div class="form_email">
                     <label for="section-4-form_phone" class="flex"><img src="img/form-email-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
-                    <p><input type="email" name="email" id="modal-about_form-email" class="email" placeholder="andrei@email.com"></p>
+                    <p><input type="email" name="email_about" id="modal-about_form-email" class="email" placeholder="andrei@email.com"></p>
                     <span class="error_name"></span>
                 </div>
                 <button type="submit" class="btn-submit"><img
@@ -434,20 +435,20 @@
                 <h2>Создайте счастье и успех вместе с нами</h2>
                 <p>Оставьте свои контактные данные и мы <br>свяжемся с Вами в ближайшее время</p>
             </div>
-            <form id="form_happy" action="javascript:void(null);" onsubmit="form_happy()" method="post" class="section-4-form form ajax_form">
+            <form id="form_happy" action="javascript:void(null);" onsubmit="form_happy()" method="POST" class="section-4-form form ajax_form">
                 <div class="form_name">
                     <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
-                    <p><input type="text" name="name" id="modal-happy_form-name" placeholder="Андрей"></p>
+                    <p><input type="text" name="name_happy" id="modal-happy_form-name" placeholder="Андрей"></p>
                     <span class="error_name"></span>
                 </div>
                 <div class="form_phone">
                     <label for="section-4-form_phone" class="flex"><img src="img/form-phone-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
-                    <p><input type="tel" name="phone" id="modal-happy_form-phone" class="phone" placeholder="0152 222"></p>
+                    <p><input type="tel" name="phone_happy" id="modal-happy_form-phone" class="phone" placeholder="0152 222"></p>
                     <span class="error_name"></span>
                 </div>
                 <div class="form_email">
                     <label for="section-4-form_phone" class="flex"><img src="img/form-email-icon.png" alt="Иконка"><span>Ваш номер телефона*</span></label>
-                    <p><input type="email" name="email" id="modal-happy_form-email" class="email" placeholder="andrei@email.com"></p>
+                    <p><input type="email" name="email_happy" id="modal-happy_form-email" class="email" placeholder="andrei@email.com"></p>
                     <span class="error_name"></span>
                 </div>
                 <button type="submit" class="btn-submit"><img
@@ -465,7 +466,7 @@
                 <h2>Закажите <br>обратный звонок</h2>
                 <p>Оставьте свои контактные данные и мы <br>свяжемся с Вами в ближайшее время</p>
             </div>
-            <form id="form_call" action="javascript:void(null);" onsubmit="form_call()" method="post" class="section-4-form form ajax_form">
+            <form id="form_call" action="javascript:void(null);" onsubmit="form_call()" method="POST" class="section-4-form form ajax_form">
                 <div class="form_name">
                     <label for="section-4-form_name" class="flex"><img src="img/form-name-icon.png" alt="Иконка"><span>Ваше имя*</span></label>
                     <p><input type="text" name="name_call" id="modal-call_form-name" placeholder="Андрей"></p>
@@ -489,9 +490,115 @@
         <div class="modal_wrap_content flex column">
             <div class="form-title">
                 <p>Спасибо! Ваша <br>заявка принята</p>
-                <img src="img/logo.jpg" alt="Лого">
+                <img src="img/logo.png" alt="Лого">
             </div>
             <div class="form-line"></div>
+        </div>
+    </div>
+</div>
+<div id="Impressum" class="modal">
+    <div class="modal_wrap">
+        <span class="close"><img src="img/close-btn.png" alt="Закрыть"></span>
+        <div class="modal_wrap_content flex column">
+            <div class="form-title">
+                <p>Impressum</p>
+            </div>
+            <div class="modal-text">
+                <div>
+                    <p>Angaben gemäß § 5 TMG</p>
+                </div>
+                <div>
+                    <p>Klärungshilfe & Mediation</p>
+                    <p>Ricklinger Stadtweg 59, <br>30459 Hannover</p>
+                    <p class="bold">Vertreten durch:</p>
+                    <p>Jürgen Schnar</p>
+                </div>
+                <div>
+                    <p class="bold">Kontakt:</p>
+                    <p>Telefon: 0511 410 668 58</p>
+                    <p>0511 768 28 47</p>
+                    <p>E-Mail: seminar@unicoachings.com</p>
+                </div>
+                <div>
+                    <p class="bold">Umsatzsteuer-ID:</p>
+                    <p>Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
+                        <br>DE220494293</p>
+                </div>
+                <div>
+                    <p class="bold">Haftungsausschluss:</p>
+                </div>
+                <div>
+                    <p class="bold">Google Analytics</p>
+                </div>
+                <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
+                    (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem
+                    Computer gespeichert werden und die eine Analyse der Benutzung der Website
+                    durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre
+                    Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von
+                    Google in den USA übertragen und dort gespeichert. Google wird diese
+                    Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports
+                    über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um
+                    weitere mit der Websitenutzung und der Internetnutzung verbundene
+                    Dienstleistungen zu erbringen. Auch wird Google diese Informationen
+                    gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder
+                    soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem
+                    Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie
+                    können die Installation der Cookies durch eine entsprechende Einstellung Ihrer
+                    Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem
+                    Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich
+                    nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der
+                    Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen
+                    Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="Datenschutz" class="modal">
+    <div class="modal_wrap">
+        <span class="close"><img src="img/close-btn.png" alt="Закрыть"></span>
+        <div class="modal_wrap_content flex column">
+            <div class="form-title">
+                <p>Datenschutz</p>
+            </div>
+            <div class="modal-text">
+                <div>
+                    <p>Google Analytics Ergänzung</p>
+                </div>
+                <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
+                    („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem
+                    Computer gespeichert werden und die eine Analyse der Benutzung der Website
+                    durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre
+                    Benutzung dieser Website werden in der Regel an einen Server von Google in den
+                    USA übertragen und dort gespeichert. Im Falle der Aktivierung der IP-
+                    Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google jedoch
+                    innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen
+                    Vertragsstaaten des Abkommens über den Europäischen Wirtschaftsraum zuvor
+                    gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von
+                    Google in den USA übertragen und dort gekürzt. Im Auftrag des Betreibers dieser
+                    Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website
+                    auszuwerten, um Reports über die Websiteaktivitäten zusammenzustellen und um
+                    weitere mit der Websitenutzung und der Internetnutzung verbundene
+                    Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von
+                    Google Analytics von Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen
+                    Daten von Google zusammengeführt. Sie können die Speicherung der Cookies
+                    durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen
+                    Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche
+                    Funktionen dieser Website vollumfänglich werden nutzen können. Sie können
+                    darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung
+                    der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die
+                    Verarbeitung dieser Daten durch Google verhindern, indem Sie das unter dem
+                    folgenden Link verfügbare Browser-Plugin herunterladen und
+                    installieren: <a href="http://tools.google.com/dlpage/gaoptout">http://tools.google.com/dlpage/gaoptout</a></p>
+                <p>Sie können die Erfassung durch Google Analytics verhindern, indem Sie auf
+                    folgenden Link klicken. <br>
+                    Es wird ein Opt-Out-Cookie gesetzt, der die zukünftige Erfassung Ihrer Daten beim
+                    Besuch dieser Website verhindert</p>
+                <p>Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie unter
+                    den Google Analytics Bedingungen bzw. unter der Google Analytics Übersicht. Wir
+                    weisen Sie darauf hin, dass auf dieser Webseite Google Analytics um den Code
+                    "gat._anonymizeIp();" erweitert wurde, um eine anonymisierte Erfassung von IP-
+                    Adressen (sog. IP-Masking) zu gewährleisten.</p>
+            </div>
         </div>
     </div>
 </div>
