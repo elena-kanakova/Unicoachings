@@ -1,12 +1,19 @@
 // Инициализация wow
 new WOW().init();
+// Прелоадер
+$(document).ready(function() {
+    $('#preloader').fadeOut(200);
+    $('html').removeClass('fixed');
+});
 // Модальные окна
 $(document).ready(function() {
     $('.modal-link, .link-modal_btn').click(function(e) {
         e.preventDefault();
         $('.modal').fadeOut('200');
-        if ($(window).width() < 640) {
+        if ($(window).width() < 641) {
             $(".btn-menu").removeClass("open");
+            $("#main-header").removeClass("open");
+            $('html').removeClass("fixed");
             $(".main-header_item.main-menu, .main-header_item.main-header_contacts").fadeOut(200);
         };
 
@@ -213,21 +220,26 @@ function form_section_4() {
 };
 // Меню
 $(document).ready(function() {
-    if ($(window).width() < 640) {
+    if ($(window).width() < 641) {
         $(".btn-menu").click(function () {
             $(this).toggleClass("open");
+            $('html').toggleClass("fixed");
+            $('#main-header').toggleClass("open");
             $('#overlay').fadeToggle(200);
             $(".main-header_item.main-menu, .main-header_item.main-header_contacts").fadeToggle(200);
         });
 
         $('#overlay').click(function () {
             $(".btn-menu").removeClass("open");
+            $('#main-header').removeClass("open");
+            $('html').removeClass("fixed");
             $(this).fadeOut(200);
             $(".main-header_item.main-menu, .main-header_item.main-header_contacts").fadeOut(200);
         });
 
         $(".js-nav-link, js-nav-link-2").click(function () {
-            $('.btn-menu, #overlay').removeClass("open");
+            $('.btn-menu, #overlay, #main-header').removeClass("open");
+            $('html').removeClass("fixed");
             $('#overlay').fadeOut(200);
             $(".main-header_item.main-menu, .main-header_item.main-header_contacts").fadeOut(200);
         });

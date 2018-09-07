@@ -1752,6 +1752,10 @@ button img {
         -ms-flex-order: 2;
         order: 2;
     }
+    #main-header.open {
+        overflow-y: auto;
+        height: 100%;
+    }
     .main-header_item.header-logo {
         width: 100%;
         -webkit-box-flex: 1;
@@ -1932,6 +1936,30 @@ button img {
     #slider_opinions {
         margin-top: 20px;
     }
+    .modal_wrap {
+        padding: 30px;
+    }
+    .modal {
+        height: 500px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-top: 30px;
+    }
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+    #happy_modal .form, #call_modal .form {
+        padding-right: 0;
+    }
+    #happy_modal .form-wrap, #call_modal .form-wrap {
+        padding-right: 15px;
+    }
+    #happy_modal .form-title h2, #call_modal .form-title h2 {
+        font: 26px "Gotham Pro", sans-serif;
+        font-weight: 600;
+        color: black;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -1940,6 +1968,12 @@ button img {
     }
     .opinions_item {
         width: 100%;
+    }
+    .form-wrap {
+        padding: 0 15px;
+    }
+    .link-modal_btn, .btn-submit {
+        width: 200px;
     }
 }
 
