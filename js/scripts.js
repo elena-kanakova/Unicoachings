@@ -5,6 +5,10 @@ $(document).ready(function() {
     $('#preloader').fadeOut(200);
     $('html').removeClass('fixed');
 });
+// Маска для телефона
+$(function(){
+    $(".phone").mask("0152 999 999 99");
+});
 // Модальные окна
 $(document).ready(function() {
     $('.modal-link, .link-modal_btn').click(function(e) {

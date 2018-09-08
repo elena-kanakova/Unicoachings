@@ -323,6 +323,9 @@ html.fixed #main-header {
     font-weight: 600;
     word-wrap:break-word;
 }
+.main-header_tel-apps {
+    text-align: right;
+}
 .main-header_tel-apps .main-header_tel {
     font-weight: 400;
 }
