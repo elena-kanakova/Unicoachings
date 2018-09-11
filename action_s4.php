@@ -10,8 +10,8 @@ if ($name_s4=='' or $phone_s4=='' or $email_s4=='') {    /* Проверка н�
     $error='Заполните необходимые поля';
 }
 else {
-    $femail = 'elena.for.job.2015@yandex.ru';
-    $address = 'elena.for.job.2015@yandex.ru';		/*Тут указіваем E-mail, куда будет отправляться письмо */
+    $femail = 'seminar@unicoachings.com';
+    $address = 'seminar@unicoachings.com';		/*Тут указіваем E-mail, куда будет отправляться письмо */
 
     $sub="Заявка с сайта";
     $mes = "
@@ -19,7 +19,7 @@ else {
 		Телефон:  $phone_s4 <hr>
 		email:  $email_s4";
 
-    $sub.=' mydomain';
+    $sub.=' Unicoachings';
 
     $sub = "=?utf-8?B?" . base64_encode($sub) . "?=";
 

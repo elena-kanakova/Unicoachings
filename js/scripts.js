@@ -95,22 +95,12 @@ function form_call() {
 
             else{
 
-                $('#form-error, #overlay').fadeIn(200);
-                $('#call_modal').fadeOut(200);
                 $('#form_call')[0].reset();
-                alert('ошибка');
-                $('html').removeClass('fixed');
-                setTimeout(function(){$('#form-error, #overlay').fadeOut('200')}, 2000);
 
             }
         },
         error:  function(xhr, str){
-            $('#form-error-2, #overlay').fadeIn(200);
-            $('#call_modal').fadeOut(200);
             $('#form_call')[0].reset();
-            alert('ошибка');
-            $('html').removeClass('fixed');
-            setTimeout(function(){$('#overlay, #form-error-2').fadeOut('200')}, 2000);
         }
     });
 };
@@ -132,22 +122,12 @@ function form_about() {
 
             else{
 
-                $('#form-error, #overlay').fadeIn(200);
-                $('#about_modal').fadeOut(200);
                 $('#form_about')[0].reset();
-                alert('ошибка');
-                $('html').removeClass('fixed');
-                setTimeout(function(){$('#form-error, #overlay').fadeOut('200')}, 2000);
 
             }
         },
         error:  function(xhr, str){
-            $('#form-error-2, #overlay').fadeIn(200);
-            $('#about_modal').fadeOut(200);
             $('#form_about')[0].reset();
-            alert('ошибка');
-            $('html').removeClass('fixed');
-            setTimeout(function(){$('#overlay, #form-error-2').fadeOut('200')}, 2000);
         }
     });
 };
@@ -168,23 +148,12 @@ function form_happy() {
             }
 
             else{
-
-                $('#form-error, #overlay').fadeIn(200);
-                $('#happy_modal').fadeOut(200);
                 $('#form_happy')[0].reset();
-                alert('ошибка');
-                $('html').removeClass('fixed');
-                setTimeout(function(){$('#form-error, #overlay').fadeOut('200')}, 2000);
 
             }
         },
         error:  function(xhr, str){
-            $('#form-error-2, #overlay').fadeIn(200);
-            $('#happy_modal').fadeOut(200);
             $('#form_happy')[0].reset();
-            alert('ошибка');
-            $('html').removeClass('fixed');
-            setTimeout(function(){$('#overlay, #form-error-2').fadeOut('200')}, 2000);
         }
     });
 };
@@ -204,21 +173,12 @@ function form_section_4() {
             }
 
             else{
-
-                $('#form-error, #overlay').fadeIn(200);
                 $('#form_section-4')[0].reset();
-                alert('ошибка');
-                $('html').removeClass('fixed');
-                setTimeout(function(){$('#form-error, #overlay').fadeOut('200')}, 2000);
 
             }
         },
         error:  function(xhr, str){
-            $('#form-error-2, #overlay').fadeIn(200);
             $('#form_section-4')[0].reset();
-            alert('ошибка');
-            $('html').removeClass('fixed');
-            setTimeout(function(){$('#overlay, #form-error-2').fadeOut('200')}, 2000);
         }
     });
 };

@@ -1069,6 +1069,9 @@ html.fixed #main-header {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
+#section-contacts .main-header_tel-apps {
+    text-align: left;
+}
 #section-contacts .main-header_tel-apps, #section-contacts .main-header_address-call, #section-contacts .main-header_tel-phones, #section-contacts .main-header_address, .address_title, .contacts-email  {
     margin-bottom: 20px;
 }
@@ -1814,6 +1817,7 @@ button img {
     .main-header_tel-apps {
         margin-left: 0;
         margin-top: 20px;
+        text-align: left;
     }
     .main-header_address-call button {
         margin-left: 0;
