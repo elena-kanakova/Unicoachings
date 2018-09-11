@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" class="fixed">
+<html lang="ru" class="fixed desktop">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -51,7 +51,7 @@
                 <div class="main-header_tel-wrap flex">
                     <div class="main-header_tel-phones">
                         <a href="tel:+7051141066858" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
-                        <a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
+                        <!--a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a-->
                     </div>
                     <div class="main-header_tel-apps">
                         <a href="tel:+7017612224490" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
@@ -243,7 +243,11 @@
                                 <span class="error_name"></span>
                             </div>
                             <button type="submit" class="btn-submit"><img src="img/call-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
-                            <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+                            <div class="warning-wrap">
+                                <label for="warning_s4" class="flex">
+                                    <input type="checkbox" id="warning_s4" required><p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+                                </label>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -296,14 +300,14 @@
                         </div>
                         <div class="main-header_tel-wrap">
                             <div class="contacts-email">
-                                <a class="contacts-email_email" href="mailto:seminar@unicoachings.com">seminar@unicoachings.com</a>
+                                <span class="contacts-email_email">seminar@unicoachings.com</span>
                             </div>
                             <div class="main-header_address-call">
                                 <p class="main-header_address">Ricklinger Stadtweg 59, <br>30459 Hannover</p>
                             </div>
                             <div class="main-header_tel-phones">
                                 <a href="tel:+7051141066858" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
-                                <a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a>
+                                <!--a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a-->
                             </div>
                             <div class="main-header_tel-apps">
                                 <a href="tel:+7017612224490" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
@@ -424,7 +428,11 @@
                 </div>
                 <button type="submit" class="btn-submit"><img
                         src="img/happy-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
-                <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+                <div class="warning-wrap">
+                    <label for="warning_about" class="flex">
+                        <input type="checkbox" id="warning_about" required><p class="warning">Оставляя ваши контактные данные на нашем сайте, Вы соглашаетесь с политикой конфеденциальности</p>
+                    </label>
+                </div>
             </form>
         </div>
     </div>
@@ -455,7 +463,11 @@
                 </div>
                 <button type="submit" class="btn-submit"><img
                         src="img/call-icon.png" alt="Иконка"><span>Записаться на консультацию</span></button>
-                <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+                <div class="warning-wrap">
+                    <label for="warning_happy" class="flex">
+                        <input type="checkbox" id="warning_happy" required><p class="warning">Оставляя ваши контактные данные на нашем сайте, Вы соглашаетесь с политикой конфеденциальности</p>
+                    </label>
+                </div>
             </form>
         </div>
     </div>
@@ -481,7 +493,11 @@
                 </div>
                 <button type="submit" class="btn-submit"><img
                         src="img/call-icon.png" alt="Иконка"><span>Заказать обратный звонок</span></button>
-                <p class="warning">Оставляя ваши контактные данные на нашем сайте, <br>Вы соглашаетесь с политикой конфеденциальности</p>
+                <div class="warning-wrap">
+                    <label for="warning_call" class="flex">
+                        <input type="checkbox" id="warning_call" required><p class="warning">Оставляя ваши контактные данные на нашем сайте, Вы соглашаетесь с политикой конфеденциальности</p>
+                    </label>
+                </div>
             </form>
         </div>
     </div>
@@ -604,10 +620,11 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/device.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

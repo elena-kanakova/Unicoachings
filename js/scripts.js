@@ -1,3 +1,11 @@
+// Определение типа устройства и замена ссылки
+$(document).ready(function() {
+    if ($('html').hasClass('desktop')) {
+        $('.main-header_tel').removeAttr('href');
+    } else {
+
+    };
+});
 // Инициализация wow
 new WOW().init();
 // Прелоадер
