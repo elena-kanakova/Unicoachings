@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="ru" class="fixed desktop">
+﻿<!doctype html>
+<html lang="ru" class="fixed">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -50,12 +50,12 @@
             <div class="main-header_item main-header_contacts">
                 <div class="main-header_tel-wrap flex">
                     <div class="main-header_tel-phones">
-                        <a href="tel:+7051141066858" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
+                        <a href="tel:+7051141066858" class="main-header_tel js-tel" data-tel="tel:+7051141066858"><span>Tel.:</span> 0511 410 668 58</a>
                         <!--a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a-->
                     </div>
                     <div class="main-header_tel-apps">
-                        <a href="tel:+7017612224490" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
-                        <a href="whatsapp://+7017612224490" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
+                        <a href="tel:+7017612224490" class="main-header_tel js-tel" data-tel="tel:+7017612224490"><span>Mobil:</span> 0176 122 244 90</a>
+                        <a href="whatsapp://+7017612224490" class="main-header_tel whatsapp js-tel" data-tel="whatsapp://+7017612224490"><span>WhatsApp:</span> 0176 122 244 90</a>
                     </div>
                 </div>
                 <div class="main-header_address-call flex">
@@ -76,17 +76,17 @@
                         <button type="button" onclick="open_modal" data-href="happy_modal" class="link-modal_btn"><img
                                 src="img/happy-icon.png" alt="Иконка"><span>Хочу стать счастливым</span></button>
                     </div>
-                    <div class="section-1_item section-1_photo">
-                        <div class="section-1_photo_photo">
-                            <img src="img/section-1_photo.png" alt="Фото">
+                </div>
+                <div class="section-1_item section-1_photo">
+                    <div class="section-1_photo_photo">
+                        <img src="img/section-1_photo.png" alt="Фото">
+                    </div>
+                    <div class="section-1_photo_desc flex column center">
+                        <div class="section-1_photo_desc-wrap flex column center">
+                            <p class="name">Jürgen Schnar</p>
+                            <p class="desc">Профессиональный коуч</p>
                         </div>
-                        <div class="section-1_photo_desc flex column center">
-                            <div class="section-1_photo_desc-wrap flex column center">
-                                <p class="name">Jürgen Schnar</p>
-                                <p class="desc">Профессиональный коуч</p>
-                            </div>
-                            <div class="section-1_photo_desc-line"></div>
-                        </div>
+                        <div class="section-1_photo_desc-line"></div>
                     </div>
                 </div>
                 <div class="section-1_promo wow fadeInRight">
@@ -144,20 +144,22 @@
     <!-- Третий экран -->
     <section id="section-3">
         <div class="container">
-            <div class="section-3_desc-title wow zoomIn" data-delay=".2s">
-                <div class="section-3_desc-title_wrap flex">
-                    <div class="section-3_img">
-                        <img src="img/section-3_photo.png" alt="Фото">
-                    </div>
-                    <div class="section-3_desc">
-                        <div class="section-3_title">
-                            <h2><span>А может быть <br>по-другому!</span></h2>
+            <div class="section-3_desc-title_content">
+                <div class="section-3_img">
+                    <img src="img/section-3_photo.png" alt="Фото">
+                </div>
+                <div class="section-3_desc-title wow zoomIn" data-delay=".2s">
+                    <div class="section-3_desc-title_wrap flex">
+                        <div class="section-3_desc">
+                            <div class="section-3_title">
+                                <h2><span>А может быть <br>по-другому!</span></h2>
+                            </div>
+                            <div class="section-3_text">
+                                <p>У нас Вы узнаете, как создать внутреннюю безопасность и уверенность в своей жизни во времена перемен. Вы найдёте ответ на вопрос: <span class="bold">«Как сосредоточить свои мысли, действия и чувства на любви, изобилии и доверии, чтобы достичь желаемого».</span> Мы рады сопровождать Вас на пути к новым результатам!</p>
+                            </div>
+                            <button type="button" onclick="open_modal" data-href="about_modal" class="link-modal_btn"><img
+                                    src="img/call-icon.png" alt="Иконка"><span>Хочу узнать подробнее</span></button>
                         </div>
-                        <div class="section-3_text">
-                            <p>У нас Вы узнаете, как создать внутреннюю безопасность и уверенность в своей жизни во времена перемен. Вы найдёте ответ на вопрос: <span class="bold">«Как сосредоточить свои мысли, действия и чувства на любви, изобилии и доверии, чтобы достичь желаемого».</span> Мы рады сопровождать Вас на пути к новым результатам!</p>
-                        </div>
-                        <button type="button" onclick="open_modal" data-href="about_modal" class="link-modal_btn"><img
-                                src="img/call-icon.png" alt="Иконка"><span>Хочу узнать подробнее</span></button>
                     </div>
                 </div>
             </div>
@@ -280,7 +282,7 @@
                     </div>
                 </div>
                 <div class="section-5_desc wow fadeIn" data-delay=".4s">
-                    <p>«На своих коучингах, семинарах, тренингах я делюсь опытом и <span class="bold">сопровождаю своих клиентов</span> не только как профессиональный коуч, экономист, журналист, переводчик, но и как человек, имеющий более 25-ти летний опыт в области психологических консультаций  в трудных жизненных ситуациях</p>
+                    <p>«На своих коучингах, семинарах, тренингах я делюсь опытом и <span class="bold">сопровождаю своих клиентов</span> не только как профессиональный коуч, экономист, журналист, переводчик, но и как человек, имеющий более 15-ти летний опыт в области психологических консультаций  в трудных жизненных ситуациях</p>
                     <p>Сколько Вы готовы заплатить за то, чтобы наполнить свою жизнь радостью, светом, теплом. За то, чтобы Ваши близкие стремились найти любую возможность, чтобы побыть с Вами лишнюю минутку. За то, чтобы утро начиналось с ожидания чуда, а день заканчивался ощущением умиротворения.
                         <br><span class="bold">Согласны, получить это всё – Бесценно!</span>»</p>
                 </div>
@@ -306,12 +308,12 @@
                                 <p class="main-header_address">Ricklinger Stadtweg 59, <br>30459 Hannover</p>
                             </div>
                             <div class="main-header_tel-phones">
-                                <a href="tel:+7051141066858" class="main-header_tel"><span>Tel.:</span> 0511 410 668 58</a>
+                                <a href="tel:+7051141066858" class="main-header_tel js-tel" data-tel="tel:+7051141066858"><span>Tel.:</span> 0511 410 668 58</a>
                                 <!--a href="fax:0511.410.668.58" class="main-header_tel"><span>Fax:</span> 0511 410 668 58</a-->
                             </div>
                             <div class="main-header_tel-apps">
-                                <a href="tel:+7017612224490" class="main-header_tel"><span>Mobil:</span> 0176 122 244 90</a>
-                                <a href="whatsapp://+7017612224490" class="main-header_tel whatsapp"><span>WhatsApp:</span> 0176 122 244 90</a>
+                                <a href="tel:+7017612224490" class="main-header_tel js-tel" data-tel="tel:+7017612224490"><span>Mobil:</span> 0176 122 244 90</a>
+                                <a href="whatsapp://+7017612224490" class="main-header_tel whatsapp js-tel" data-tel="whatsapp://+7017612224490"><span>WhatsApp:</span> 0176 122 244 90</a>
                             </div>
                         </div>
                         <div class="main-header_address-call">
@@ -533,8 +535,8 @@
                 </div>
                 <div>
                     <p class="bold">Kontakt:</p>
-                    <p>Telefon: 0511 410 668 58</p>
-                    <p>0511 768 28 47</p>
+                    <p>Telefon: <a href="tel:051141066858" class="js-tel">0511 410 668 58</a></p>
+                    <p><a href="05117682847" class="js-tel">0511 768 28 47</a></p>
                     <p>E-Mail: seminar@unicoachings.com</p>
                 </div>
                 <div>

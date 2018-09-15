@@ -1,9 +1,14 @@
 // Определение типа устройства и замена ссылки
 $(document).ready(function() {
     if ($('html').hasClass('desktop')) {
-        $('.main-header_tel').removeAttr('href');
+        $('.js-tel').removeAttr('href');
     } else {
-
+        $('.js-tel').each(
+            function (index, value) {
+                var tel = $(this).attr('data-tel');
+                $(this).prop('href',tel);
+                console.log(tel);
+            });
     };
 });
 // Инициализация wow
@@ -215,5 +220,10 @@ $(document).ready(function() {
             $('#overlay').fadeOut(200);
             $(".main-header_item.main-menu, .main-header_item.main-header_contacts").fadeOut(200);
         });
+    }
+    else {
+        if ($(window).width() > 640) {
+            $(".main-header_item.main-menu, .main-header_item.main-header_contacts").removeAttr('style');
+        };
     };
 });
