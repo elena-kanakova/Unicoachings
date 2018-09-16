@@ -685,7 +685,7 @@ html.fixed #main-header {
 .section-3_desc-title_content {
     position: relative;
     width: 1024px;
-    height: 348px;
+    height: auto;
     top: -45px;
     left: 50%;
     -webkit-transform: translate(-50%,0);
@@ -717,7 +717,7 @@ html.fixed #main-header {
     padding: 20px;
     margin-bottom: 50px;
     overflow: hidden;
-    height: 348px;
+    height: auto;
     /*background: url("../img/section-3_desc-title_bg.png") top center no-repeat;*/
     background-size: 100% 100%;
 }
@@ -734,28 +734,32 @@ html.fixed #main-header {
     background: -webkit-linear-gradient(left, #fda73b 0%, #fda73b 10%, #fb693d 90%,#fb693d 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #fda73b 0%, #fda73b 10%, #fb693d 90%,#fb693d 100%);
 }
-.section-3_desc-title_wrap {
-    background-color: white;
+.section-3_desc {
     position: relative;
     z-index: 1;
-    margin-left: -200px;
-    margin-right: -200px;
-    padding: 0 200px;
-    height: 308px;
+    overflow: hidden;
+    padding: 0 10px 50px 340px;
+    height: auto;
+}
+.section-3_desc-title_wrap::before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    left: -200px;
+    right: -200px;
+    top: 20px;
+    bottom: 20px;
+    background-color: white;
     border-radius: 0 0 50% 50%;
 }
 .section-3_img {
     position: absolute;
     z-index: 2;
-    bottom: 26px;
+    bottom: 25px;
     left: 12px;
-    -webkit-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-    transform: rotate(2deg);
-}
-.section-3_desc {
-    padding-left: 340px;
-    padding-right: 10px;
+    -webkit-transform: rotate(1.5deg);
+    -ms-transform: rotate(1.5deg);
+    transform: rotate(1.5deg);
 }
 .section-3_title {
     margin-top: 30px;
@@ -1457,7 +1461,6 @@ button img {
         background-size: cover;
     }
     #section-2 .container {
-        padding: 140px 30px 50px;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -1487,7 +1490,6 @@ button img {
     }
     #section-3 .container {
         min-height: auto;
-        padding: 50px 30px 0;
     }
     .section-3_content-wrap {
         margin-top: 50px;
@@ -1502,10 +1504,11 @@ button img {
         flex: 1 1 50%;
         margin-left: 0;
     }
-    .section-3_desc-title_wrap {
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
+    .section-3_desc-title_content {
+        width: 980px;
+    }
+    .section-3_img {
+        bottom: 24px;
     }
     .section-3_desc-title {
         position: relative;
@@ -1529,7 +1532,6 @@ button img {
     }
     .section-3_desc .link-modal_btn {
         display: block;
-        margin: 35px auto;
     }
     .section-4_left_piramida {
         margin-left: 0;
@@ -1605,6 +1607,8 @@ button img {
         width: 20%;
         float: 1 1 20%;
         border-right: none;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
         order: 1;
     }
     .main-header_logo a img {
@@ -1662,14 +1666,20 @@ button img {
     }
     .section-1_title-photo {
         margin-right: 100px;
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
         order: 1;
     }
     .section-1_photo {
         margin-left: 0;
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
         order: 3;
         margin-top: 50px;
     }
     .section-1_promo {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         padding: 202px 30px 20px;
     }
@@ -1679,6 +1689,12 @@ button img {
     .section-3_title h2 span, .section-4_desc h2 span, .section-5_title h2 span, .contacts-title h2 span, .section-2_item.item-1 h2 {
         margin-left: 0;
         padding-left: 0;
+        font: 32px "Gotham Pro", sans-serif;
+        color: black;
+        font-weight: 600;
+    }
+    #section-2 .container {
+        padding: 160px 30px 50px;
     }
     .section-2_content-wrap {
         -webkit-box-orient: vertical;
@@ -1701,15 +1717,32 @@ button img {
     .section-3_content-wrap {
         margin-top: 30px;
     }
-    .section-3_item br {
-        display: none;
-    }
     .section-3_item.item-1, .section-3_item.item-2, .section-3_item.item-3, .section-3_item.item-4, .section-3_item.item-5, .section-3_item.item-6, .section-3_item.item-7 {
-        min-width: 100%;
+        min-width: 50%;
         -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-        flex: 1 1 100%;
+        -ms-flex: 1 1 50%;
+        flex: 1 1 50%;
         margin-left: 0;
+        min-height: 138px;
+        background-size: auto 100%!important;
+    }
+    .section-3_item p {
+        font: 16px "Gotham Pro", sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+    .section-3_desc-title_content {
+        width: 850px;
+        top: 0;
+    }
+    .section-3_img {
+        bottom: 23px;
+    }
+    .section-3_img img {
+        max-width: 300px;
+    }
+    .section-3_desc {
+        padding: 0 10px 30px 290px;
     }
     .section-4_desc {
         padding: 70px 30px 0;
@@ -1803,6 +1836,25 @@ button img {
     #section-2 .container {
         padding: 50px 30px 50px;
     }
+    .section-3_item.item-1, .section-3_item.item-2, .section-3_item.item-3, .section-3_item.item-4, .section-3_item.item-5, .section-3_item.item-6, .section-3_item.item-7 {
+        min-height: 118px;
+        background-size: auto 100%!important;
+    }
+    .section-3_desc-title_content {
+        width: 700px;
+    }
+    .section-3_img {
+        bottom: 28px;
+        -webkit-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+    .section-3_img img {
+        max-width: 250px;
+    }
+    .section-3_desc {
+        padding: 0 10px 0 240px;
+    }
     #section-5 .container {
         position: relative;
         z-index: 1;
@@ -1856,6 +1908,20 @@ button img {
     .section-3_img img {
         max-width: 300px;
     }
+    .section-3_desc-title_content {
+        width: 650px;
+    }
+    .section-3_img {
+        bottom: 25px;
+    }
+    .section-3_img img {
+        max-width: 250px;
+    }
+    .section-3_title h2 span {
+        font: 26px "Gotham Pro", sans-serif;
+        color: black;
+        font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 702px) {
@@ -1878,16 +1944,25 @@ button img {
         margin-bottom: 0;
     }
     .section-1_promo {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
         order: 2;
         padding: 202px 50px 20px;
     }
-    .section-3_desc-title_wrap {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .section-3_img {
+    .section-3_item p br {
         display: none;
+    }
+    .section-3_item.item-1, .section-3_item.item-2, .section-3_item.item-3, .section-3_item.item-4, .section-3_item.item-5, .section-3_item.item-6, .section-3_item.item-7 {
+        min-width: 100%;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        margin-left: 0;
+        min-height: 138px;
+        background-size: auto 100%!important;
+    }
+    .section-3_desc-title_content {
+        width: 600px;
     }
     .section-3_desc {
         padding-bottom: 0;
@@ -2007,6 +2082,29 @@ button img {
     #section-1 {
         margin: 119px 0 0;
     }
+    .section-3_desc-title_content {
+        width: 90%;
+    }
+    .section-3_img {
+        bottom: auto;
+        top: -40px;
+        left: 50%;
+        -webkit-transform: translate(-50%,0);
+        -ms-transform: translate(-50%,0);
+        transform: translate(-50%,0);
+    }
+    .section-3_img img {
+        max-width: 200px;
+    }
+    .section-3_desc {
+        padding: 180px 10px 0;
+    }
+    .section-3_text {
+        padding: 0 10px;
+    }
+    .section-3_text p {
+        padding-right: 0;
+    }
     #section-4 .container {
         padding: 0 30px;
     }
@@ -2014,12 +2112,30 @@ button img {
         padding: 50px 30px 0;
      }
     .section-4_wrap {
+        padding-top: 0;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start;
     }
+    .section-4_left {
+        width: 100%;
+        min-height: 400px;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+        flex: 1 1 100%;
+        padding-bottom: 20px;
+        background: url(../img/section-4_piramida-bg.jpg) center bottom no-repeat;
+        background-size: auto 420px;
+    }
+    .section-4_left_piramida {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100%;
+        min-height: 400px;
+    }
     .section-4_left_piramida .item-1 {
-        padding-top: 50px;
+        padding-top: 20px;
     }
     .section-4_left_piramida .item-1, .section-4_left_piramida .item-2, .section-4_left_piramida .item-3 {
         height: auto;
@@ -2120,7 +2236,7 @@ button img {
         height: 500px;
         overflow-y: auto;
         overflow-x: hidden;
-        margin-top: 30px;
+        margin-top: 0;
     }
     .close {
         top: 20px;
@@ -2139,6 +2255,16 @@ button img {
     }
 }
 
+@media screen and (max-width: 460px) {
+    .section-3_desc-title_content::before, .section-3_desc-title_content::after {
+        bottom: 50px;
+    }
+    .link-modal_btn, .btn-submit {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
 @media screen and (max-width: 440px) {
     #slider_opinions {
         width: 100%;
@@ -2149,12 +2275,18 @@ button img {
     .form-wrap {
         padding: 0 15px;
     }
-    .link-modal_btn, .btn-submit {
-        width: 200px;
+    .section-3_desc-title_content::before, .section-3_desc-title_content::after {
+        bottom: 45px;
+    }
+    .section-1_photo_photo img, .section-5_left .section-1_photo_photo img {
+        max-width: 300px;
     }
 }
 
 @media screen and (max-width: 360px) {
+    .modal {
+        width: 95%;
+    }
     .section-3_title h2 span, .section-4_desc h2 span, .section-5_title h2 span, .contacts-title h2 span, .form-title h2, .section-2_item.item-1 h2 {
         margin-left: 0;
         padding-left: 0;
@@ -2190,35 +2322,57 @@ button img {
         max-width: 40px;
         margin-bottom: 20px;
     }
-    #section-3 {
-        background: none;
-    }
     #section-3 .container {
         padding: 0 10px;
     }
     .section-3_title h2 span br {
         display: block;
     }
+    .section-3_desc-title_content::before, .section-3_desc-title_content::after {
+        bottom: 40px;
+    }
     .section-3_desc-title {
         padding: 10px;
         margin-bottom: 50px;
-        background: #fcfcfc;
     }
-    .section-3_title h2 span, .section-3_title h2 span, .section-4_desc h2 span {
+    .section-3_content .section-3_title {
+        margin: 0 auto 20px;
+    }
+    .section-3_img {
+        top: -20px;
+    }
+    .section-3_img img {
+        max-width: 150px;
+    }
+    .section-3_desc {
+        padding: 150px 10px 0;
+    }
+    .link-modal_btn, .btn-submit {
+        padding: 0 10px;
+        font: 12px "Gotham Pro", sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+    .section-4_desc h2 span {
         color: #f89c10;
+    }
+    .section-3_desc-title_content::before, .section-3_desc-title_content::after {
+        bottom: 35px;
+        width: 10px;
+    }
+    .section-3_desc-title_wrap::before {
+        top: 10px;
+        bottom: 10px;
     }
     .section-3_content-wrap {
         margin-top: 0;
     }
     .section-3_item {
-        background: none !important;
-        min-height: auto !important;
+        min-height: 100px;
     }
     .section-3_item p {
-        margin-left: 0;
         margin-top: 20px;
-        font: 15px/22px "Gotham Pro", sans-serif;
-        color: black;
+        font: 16px/22px "Gotham Pro", sans-serif;
         font-weight: 400;
     }
     #section-4 {
@@ -2245,6 +2399,11 @@ button img {
         font: 32px "Gotham Pro", sans-serif;
         color: #f89c10;
         font-weight: 600;
+    }
+    .section-5_desc p {
+        font: 14px/24px "Gotham Pro", sans-serif;
+        color: black;
+        font-weight: 400;
     }
     .section-5_right {
         padding: 30px 0 0;
