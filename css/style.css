@@ -1445,6 +1445,9 @@ button img {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
     }
     .section-1_photo {
         margin-left: -27px;
@@ -1635,6 +1638,9 @@ button img {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2;
+    }
+    .main-header_tel-phones, .main-header_address {
+        margin-right: 30px;
     }
     .main-header_tel-wrap, .main-header_address-call {
         -webkit-box-pack: end;
